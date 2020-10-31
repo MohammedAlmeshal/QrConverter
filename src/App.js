@@ -11,7 +11,7 @@ function App() {
           <Col span={20}>
             <h1 style={{ color: "white", fontSize: "2.5rem" }}>
               <span style={{ fontSize: "2rem" }} role="img" aria-label="link">
-                🔗
+                🔗 &nbsp;
               </span>
               حوّل اي رابط الى رمز QR !
             </h1>

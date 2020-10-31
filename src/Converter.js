@@ -12,7 +12,8 @@ export default class Converter extends Component {
     };
 
     const onSubmit = () => {
-      this.setState({ value: this.state.link, showQR: true });
+      this.setState({ value: this.state.link, showQR: false }, () => {   this.setState({showQR: true})});
+   
     };
 
     return (
@@ -40,7 +41,7 @@ export default class Converter extends Component {
             <span style={{ fontSize: "18px" }}> حوّل</span>
           </Button>
         </Input.Group>
-        {this.state.showQR ? <Qrcode value={this.state.value}></Qrcode> : null}
+        {this.state.showQR ? <Qrcode showQR={this.state.showQR}  value={this.state.value}></Qrcode> : null}
       </div>
     );
   }

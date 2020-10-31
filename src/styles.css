@@ -1,0 +1,17 @@
+.QR-enter {
+  opacity: 0.01;
+}
+
+.QR-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.QR-exit {
+  opacity: 1;
+}
+
+.QR-exit-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
