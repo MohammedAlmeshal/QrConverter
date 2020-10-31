@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import Converter from "./Converter";
+import { Row, Col } from "antd";
+import { ConfigProvider } from "antd";
+import "./App.less";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ paddingTop: "5vmax" }} className="App">
+      <ConfigProvider direction="rtl">
+        <Row justify="center">
+          <Col span={20}>
+            <h1 style={{ color: "white", fontSize: "2.5rem" }}>
+              <span style={{ fontSize: "2rem" }} role="img" aria-label="link">
+                🔗
+              </span>
+              حوّل اي رابط الى رمز QR !
+            </h1>
+            <Converter></Converter>
+          </Col>
+        </Row>
+      </ConfigProvider>
     </div>
   );
 }
