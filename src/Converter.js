@@ -35,7 +35,7 @@ export default class Converter extends Component {
             }}
             onClick={onSubmit}
             type="primary"
-            disabled={this.state.link == "" ? true : false}
+            disabled={this.state.link === "" ? true : false}
           >
             <span style={{ fontSize: "18px" }}> حوّل</span>
           </Button>
